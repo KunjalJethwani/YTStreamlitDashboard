@@ -22,9 +22,6 @@ st.markdown("<h1 style='color: red; text-align: center;'>YouTube Channel Dashboa
 api_key = st.text_input("Enter your YouTube API Key")
 channel_id = st.text_input("Enter YouTube Channel ID") # use name
 
-# api_key = 'AIzaSyD8f3mC8_FCn3HOjHhovAelZKK1b_LTd7s'
-# channel_id = 'UC4JX40jDee_tINbkjycV4Sg' #use name
-
 # api_service_name = "youtube"
 # api_version = "v3"
 
