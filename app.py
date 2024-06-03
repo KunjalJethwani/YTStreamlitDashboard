@@ -6,7 +6,6 @@ from helper import create_df, preprocess
 from googleapiclient.discovery import build
 from plots import plot_top_n_bar, title_word_cloud, year_views_line, heatmap, get_top_views, scatter_plot
 
-
 st.set_page_config(
     page_title="YouTube Channel Analysis",
     page_icon="🌱",
@@ -20,7 +19,7 @@ st.markdown("<h1 style='color: red; text-align: center;'>YouTube Channel Dashboa
 # st.title("YouTube Channel Dashboard")
 
 api_key = st.text_input("Enter your YouTube API Key")
-channel_id = st.text_input("Enter YouTube Channel ID") # use name
+channel_id = st.text_input("Enter YouTube Channel ID") 
 
 # api_service_name = "youtube"
 # api_version = "v3"
@@ -78,14 +77,6 @@ if api_key and channel_id:
             st.markdown('### Views per Year')
             
         st.altair_chart(year_views_line(df))
-
-        # with top_bot[1]:
-        #     st.write("")
-
-        # with top_bot[1]:
-        #     st.markdown('### Heatmap')
-        # with top_bot[1]:
-        #     st.markdown('### Heatmap')
         
         st.altair_chart(heatmap(df))
 
