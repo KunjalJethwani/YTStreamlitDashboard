@@ -1,12 +1,10 @@
 import streamlit as st
-import plotly.express as px
 import pandas as pd
 import altair as alt
 
 from helper import create_df, preprocess
 from googleapiclient.discovery import build
 from plots import plot_top_n_bar, title_word_cloud, year_views_line, heatmap, get_top_views, scatter_plot
-import matplotlib.pyplot as plt
 
 
 st.set_page_config(
