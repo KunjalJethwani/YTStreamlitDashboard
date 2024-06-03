@@ -1,8 +1,0 @@
-streamlit
-pandas
-numpy
-altair
-isodate
-dateutil
-IPython
-google-api-python-client
